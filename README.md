@@ -104,7 +104,7 @@ title Arch Linux
 linux /vmlinuz-linux-zen
 initrd /amd-ucode.img
 initrd /initramfs-linux-zen.img
-options root=UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx rw
+options root=UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx root=/dev/sda2 rootflags=subvol=@ rw
 
 nano -w /boot/loader/loader.conf
 
